@@ -1,0 +1,16 @@
+{
+    "10115":{
+        "city": "Berlin",
+        "firstLocation": "Spreitenbach",
+        "secondLocation": "Zürich Altstetten",
+        "thirdLocation": "Zürich Oerlikon",
+        "mobileLocation": "Zürich Oerlikon"
+    },
+    "10114":{
+        "city": "Berlin",
+        "firstLocation": "Spreitenbach",
+        "secondLocation": "Zürich Altstetten",
+        "thirdLocation": "Zürich Oerlikon",
+        "mobileLocation": "Zürich Oerlikon"
+    }
+}

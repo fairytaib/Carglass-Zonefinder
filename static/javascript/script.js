@@ -148,6 +148,10 @@ searchButton.addEventListener('click', () => {
                 if (userCoords) {
                     const nearestLocations = findNearestLocations(userCoords, fixedLocations);
                     displayLocations(nearestLocations);
+                } else if (postalCode == "Norbert" || postalCode == "norbert") {
+                    searchInput.value = "BAM! FLIEGENKLATSCHE!";
+                    searchButton.style.backgroundColor = "red";
+                    searchInput.style.backgroundColor = "red";
                 } else {
                     alert('Postleitzahl nicht gefunden.');
                 }

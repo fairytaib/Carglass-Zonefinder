@@ -215,12 +215,12 @@ function deg2rad(deg) {
 
 function displayLocations(locations) {
     if (locations.length > 0) {
-        closestLocation.textContent = `${locations[0].name} (${locations[0].distance.toFixed(2)} km)`;
+        closestLocation.textContent = `${locations[0].name}`;
     }
     if (locations.length > 1) {
-        secondLocation.textContent = `${locations[1].name} (${locations[1].distance.toFixed(2)} km)`;
+        secondLocation.textContent = `${locations[1].name}`;
     }
     if (locations.length > 2) {
-        thirdLocation.textContent = `${locations[2].name} (${locations[2].distance.toFixed(2)} km)`;
+        thirdLocation.textContent = `${locations[2].name}`;
     }
 }

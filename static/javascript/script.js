@@ -9,137 +9,132 @@ const specialLocation = document.getElementById('special-location');
 const zone = document.getElementById('zone');
 
 const fixedLocations = [{
-        name: 'Aigle',
+        name: 'Aigle (035)',
         lat: 46.31466293334961,
         lon: 6.9387736320495605
     },
     {
-        name: 'Biel/Boujean/Bienne',
+        name: 'Biel/Boujean/Bienne (036)',
         lat: 47.1582,
         lon: 7.2831
     },
     {
-        name: 'Basel/Pratteln/Bale/Basilea',
+        name: 'Basel/Pratteln/Bale/Basilea (022)',
         lat: 47.5174,
         lon: 7.6941
     },
     {
-        name: 'Bern/Berne/Berna',
+        name: 'Bern/Berne/Berna (023)',
         lat: 46.939,
         lon: 7.435
     },
     {
-        name: 'Chur/Coire',
+        name: 'Chur/Coire (026)',
         lat: 46.8535,
         lon: 9.5309
     },
     {
-        name: 'Contone',
+        name: 'Contone (043)',
         lat: 46.1541,
         lon: 8.9235
     },
     {
-        name: 'Freiburg/Fribourg',
+        name: 'Freiburg/Fribourg (015)',
         lat: 46.8224,
         lon: 7.1537
     },
     {
-        name: 'Genf/Genéve/Ginera',
+        name: 'Genf/Genéve/Ginera (011)',
         lat: 46.1795,
         lon: 6.1391
     },
     {
-        name: 'Gland',
+        name: 'Gland (016)',
         lat: 46.4184,
         lon: 6.2696
     },
     {
-        name: 'Gossau',
+        name: 'Gossau (025)',
         lat: 47.4208,
         lon: 9.2575
     },
     {
-        name: 'Lugano',
+        name: 'Lugano (042)',
         lat: 46.0134,
         lon: 8.9542
     },
     {
-        name: "Luzern/Lucerne/Lucerna",
+        name: "Rothenburg/Lucerne/Lucerna (024)",
         lat: 47.0833,
         lon: 8.2667
     },
     {
-        name: 'Laussene/Losanna',
+        name: 'Laussene/Losanna (012)',
         lat: 46.5553,
         lon: 6.5775
     },
     {
-        name: 'Lyssach',
+        name: 'Lyssach (039)',
         lat: 47.3868,
         lon: 8.4839
     },
     {
-        name: 'Neuenbrug/Neuchâtel',
+        name: 'Neuenbrug/Neuchâtel (014)',
         lat: 46.9943,
         lon: 6.887
     },
     {
-        name: 'Oftringen',
+        name: 'Oftringen (027)',
         lat: 47.30915832519531,
         lon: 7.9256086349487305
     },
     {
-        name: 'Rothenburg',
-        lat: 47.1043,
-        lon: 8.2674
-    },
-    {
-        name: 'Spreitenbach',
+        name: 'Spreitenbach (029)',
         lat: 47.4174,
         lon: 8.3667
     },
     {
-        name: 'Sion/Valais',
+        name: 'Sion/Valais (013)',
         lat: 46.220603942871094,
         lon: 7.355078220367432
     },
     {
-        name: 'Thun/Thoune (Heimberg)',
+        name: 'Thun/Thoune (Heimberg) (056)',
         lat: 46.7908,
         lon: 7.6039
     },
     {
-        name: 'Volketswil',
+        name: 'Volketswil (021)',
         lat: 47.37799072265625,
         lon: 8.67882251739502
     },
     {
-        name: 'Winterthur',
+        name: 'Winterthur (045)',
         lat: 47.5075,
         lon: 8.7592
     },
     {
-        name: 'Zug/Zoug',
+        name: 'Zug/Zoug (020)',
         lat: 47.4833,
         lon: 12.0667
     },
     {
-        name: 'Zuerich Altstetten',
+        name: 'Zuerich Altstetten (028)',
         lat: 47.3868,
         lon: 8.4839
     },
     {
-        name: 'Zuerich Kloten',
+        name: 'Zuerich Kloten (044)',
         lat: 47.4587,
         lon: 8.5821
     },
     {
-        name: 'Zuerich Oerlikon',
+        name: 'Zuerich Oerlikon (030)',
         lat: 47.3999,
         lon: 8.5474
     },
     {
-        name: 'Yverdon',
+        name: 'Yverdon (034)',
         lat: 46.79048156738281,
         lon: 6.628849506378174
     },

@@ -14,22 +14,22 @@ const fixedLocations = [{
         lon: 6.9387736320495605
     },
     {
-        name: 'Biel',
+        name: 'Biel/Boujean/Bienne',
         lat: 47.1582,
         lon: 7.2831
     },
     {
-        name: 'Basel',
+        name: 'Basel/Pratteln/Bale/Basilea',
         lat: 47.5174,
         lon: 7.6941
     },
     {
-        name: 'Bern',
+        name: 'Bern/Berne/Berna',
         lat: 46.939,
         lon: 7.435
     },
     {
-        name: 'Chur',
+        name: 'Chur/Coire',
         lat: 46.8535,
         lon: 9.5309
     },
@@ -39,12 +39,12 @@ const fixedLocations = [{
         lon: 8.9235
     },
     {
-        name: 'Freiburg',
+        name: 'Freiburg/Fribourg',
         lat: 46.8224,
         lon: 7.1537
     },
     {
-        name: 'Genf',
+        name: 'Genf/Genéve/Ginera',
         lat: 46.1795,
         lon: 6.1391
     },
@@ -64,12 +64,12 @@ const fixedLocations = [{
         lon: 8.9542
     },
     {
-        name: "Luzern",
+        name: "Luzern/Lucerne/Lucerna",
         lat: 47.0833,
         lon: 8.2667
     },
     {
-        name: 'Laussene',
+        name: 'Laussene/Losanna',
         lat: 46.5553,
         lon: 6.5775
     },
@@ -79,7 +79,7 @@ const fixedLocations = [{
         lon: 8.4839
     },
     {
-        name: 'Neuenbrug',
+        name: 'Neuenbrug/Neuchâtel',
         lat: 46.9943,
         lon: 6.887
     },
@@ -99,12 +99,12 @@ const fixedLocations = [{
         lon: 8.3667
     },
     {
-        name: 'Sion',
+        name: 'Sion/Valais',
         lat: 46.220603942871094,
         lon: 7.355078220367432
     },
     {
-        name: 'Thun',
+        name: 'Thun/Thoune (Heimberg)',
         lat: 46.7908,
         lon: 7.6039
     },
@@ -119,7 +119,7 @@ const fixedLocations = [{
         lon: 8.7592
     },
     {
-        name: 'Zug',
+        name: 'Zug/Zoug',
         lat: 47.4833,
         lon: 12.0667
     },

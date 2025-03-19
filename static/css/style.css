@@ -1,7 +1,69 @@
-body{
-    background-color: #f8f9fa;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Ändere die Schriftart für ein moderneres Aussehen */
+    margin: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #f4f4f4; /* Ein sanfter Hintergrund */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
     color: #333;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 90%; /* Breite des Hauptinhalts anpassen */
+    max-width: 600px; /* Maximale Breite für bessere Lesbarkeit */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sanfter Schatten für Tiefe */
+}
+
+main > div {
+    margin-bottom: 20px; /* Abstand zwischen den Abschnitten */
+}
+
+input,
+button {
+    padding: 12px 15px; /* Größere Eingabefelder und Buttons */
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%; /* Volle Breite für Eingabefeld und Button */
+}
+
+button {
+    background-color: #007bff; /* Blauer Button */
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+ul{
+    list-style-type: none;
+}
+li {
+    padding: 8px 0px;
 }

@@ -213,6 +213,8 @@ function deg2rad(deg) {
 }
 
 function displayLocations(locations) {
+    document.getElementById("current-postalcode").textContent = `PLZ: ${searchInput.value}`
+    searchInput.value = "";
     if (locations.length > 0) {
         closestLocation.textContent = `${locations[0].name}`;
     }

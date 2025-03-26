@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/css/style.css">
     <script src="static/javascript/script.js" defer></script>
+    <script src="static/javascript/zonefinder.js" defer></script>
     <title>Filialfinder</title>
 </head>
 
@@ -20,6 +21,9 @@
         </div>
     </header>
     <main>
+        <div>
+            
+        </div>
         <div>
             <input type="text" id="location" placeholder="Postleitzahl" />
             <button id="search-button">Suchen</button>
@@ -41,9 +45,10 @@
                 </ul>
         </div>
         <div>
-            <span id="adresse">
-
-            </span>
+            <ul>
+                <li>Mobil: <span id="mobile-filiale"></span></li>
+                <li>Zone: <span id="zone-number"></span></li>
+            </ul>
         </div>
 
     </main>

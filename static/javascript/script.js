@@ -1,11 +1,15 @@
 const title = document.getElementById('title');
 const underTitle = document.getElementById('under-title');
+
 const searchInput = document.getElementById('location');
 const searchButton = document.getElementById('search-button');
+
 const h3_title = document.getElementById('h3-title');
+
 const closestLocation = document.getElementById('closest-location');
 const secondLocation = document.getElementById('second-location');
 const thirdLocation = document.getElementById('third-location');
+
 const footerText = document.getElementById('footer-text');
 
 const french_button = document.getElementById('french-language-button');
@@ -85,7 +89,7 @@ const fixedLocations = [{
         adress: "Stationsstrasse 92 in 6023 Rothenburg"
     },
     {
-        name: 'Laussene/Losanna (012)',
+        name: 'Lausanne/Losanna (012)',
         lat: 46.5553,
         lon: 6.5775,
         adress: "Chemin de Saugy 7, 1023 Crissier"

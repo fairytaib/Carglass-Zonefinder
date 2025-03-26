@@ -19,6 +19,13 @@ header {
     text-align: center;
     margin-bottom: 20px;
 }
+
+#language-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 #links{
     margin: 3px;
     display: flex;

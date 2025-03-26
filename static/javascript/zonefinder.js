@@ -38,7 +38,10 @@ fetch('static/javascript/creds.js')
                         const mid = Math.floor((left + right) / 2);
                         if (postalCodes[mid] === postalCode) {
                             console.log(data.values[mid + 1][4]);
-                            return data.values[mid + 1][4]; // Filiale gefunden
+                            return {
+                                mobile : data.values[mid + 1][2],
+                                zone: data.values[mid + 1][4]
+                            }; // Filiale gefunden
                             
                         } else if (postalCodes[mid] < postalCode) {
                             left = mid + 1;
@@ -60,8 +63,8 @@ fetch('static/javascript/creds.js')
                 const filial = await getPostalCodeData(postalCode);
                 if (filial !== null) {
                     // Zeige die Filialinformation an
-                    mobileFiliale.textContent = filial[2];
-                    zoneNumber.textContent = filial[4];
+                    mobileFiliale.textContent = filial.mobile;
+                    zoneNumber.textContent = filial.zone;
             } else {
                 alert('Nerv nicht ein.');
             }

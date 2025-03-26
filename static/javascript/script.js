@@ -1,12 +1,16 @@
-const searchButton = document.getElementById('search-button');
+const title = document.getElementById('title');
+const underTitle = document.getElementById('under-title');
 const searchInput = document.getElementById('location');
-
+const searchButton = document.getElementById('search-button');
+const h3_title = document.getElementById('h3-title');
 const closestLocation = document.getElementById('closest-location');
 const secondLocation = document.getElementById('second-location');
 const thirdLocation = document.getElementById('third-location');
-const mobileLocation = document.getElementById('mobile-location');
-const specialLocation = document.getElementById('special-location');
-const zone = document.getElementById('zone');
+const footerText = document.getElementById('footer-text');
+
+const french_button = document.getElementById('french-language-button');
+const italian_button = document.getElementById('italian-language-button');
+const german_button = document.getElementById('german-language-button');
 
 const fixedLocations = [{
         name: 'Aigle (035)',
@@ -254,3 +258,35 @@ function displayLocations(locations) {
         document.getElementById("third-location-adress").textContent = locations[2].adress;
     }
 }
+
+function change_language_french() {
+    fetch("./static/json/language.json")
+        .then(response => response.json())
+        .then(data => {
+            title.innerText = data.french.title
+            underTitle.innerText = data.french.subtitle
+            searchInput.placeholder = data.french.location
+            searchButton.innerText = data.french.search
+            h3_title.innerText = data.french.h3_title
+            footerText.innerText = data.french.footer_text
+        })
+}
+
+function change_language_italian() {
+    fetch("./static/json/language.json")
+        .then(response => response.json())
+        .then(data => {
+            title.innerText = data.italia.title
+            underTitle.innerText = data.italia.subtitle
+            searchInput.placeholder = data.italia.location
+            searchButton.innerText = data.italia.search
+            h3_title.innerText = data.italia.h3_title
+            footerText.innerText = data.italia.footer_text
+        })
+}
+
+french_button.addEventListener('click', change_language_french);
+italian_button.addEventListener('click', change_language_italian);
+german_button.addEventListener('click', () => {
+    location.reload();
+});

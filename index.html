@@ -11,12 +11,13 @@
 
 <body>
     <header>
-        <h1>Filialfinder</h1>
-        <p>Suche die nächsten Filialen in der Umgebung</p>
-        <!-- <div id="links">
-            <a href="french.html">Français</a>
-            <a href="italien.html">Italiano</a>
-        </div> -->
+        <h1 id="title">Filialfinder</h1>
+        <p id="under-title">Suche die nächsten Filialen in der Umgebung</p>
+        <div id="language-container">
+            <button id="french-language-button">Français</button>
+            <button id="italian-language-button">Italiano</button>
+            <button id="german-language-button">Deutsch</button>
+        </div>
     </header>
     <main>
         <div>
@@ -27,7 +28,7 @@
             <h3><span id="current-postalcode"></span></h3>
         </div>
         <div>
-            <h3>Filialen</h2>
+            <h3 id="h3-title">Filialen</h2>
                 <ul>
                     <li>1. <span id="closest-location"></span></li>
                     <p id="closest-location-adress" class="adress"></p>
@@ -47,7 +48,7 @@
 
     </main>
     <footer>
-        <p>Postleitzahlen ausserhalb Schweiz sind nicht möglich</p>
+        <p id="footer-text">Postleitzahlen ausserhalb Schweiz sind nicht möglich</p>
     </footer>
 </body>
 

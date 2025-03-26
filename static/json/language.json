@@ -1,0 +1,19 @@
+{
+    "italia": {
+        "title": "Trova filiali",
+        "subtitle": "Trova la filiale più vicina a te",
+        "location": "Posizione",
+        "search": "Cerca",
+        "h3_title": "Filiali",
+        "footer_text": "I codici postali al di fuori della Svizzera non sono possibili"
+    },
+
+    "french": {
+        "title": "Trouver des succursales",
+        "subtitle": "Trouvez la succursale la plus proche de chez vous",
+        "location": "Emplacement",
+        "search": "Chercher",
+        "h3_title": "Succursales",
+        "footer_text": "Les codes postaux en dehors de la Suisse ne sont pas possibles"
+    }
+}

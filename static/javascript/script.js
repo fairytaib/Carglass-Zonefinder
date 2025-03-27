@@ -174,6 +174,12 @@ const fixedLocations = [{
     },
 ];
 
+searchInput.addEventListener('keydown', event => {
+    if (event.key === 'Enter') {
+        searchButton.click();
+    }
+});
+
 searchButton.addEventListener('click', () => {
     const postalCode = searchInput.value;
     if (postalCode) {

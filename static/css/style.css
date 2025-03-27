@@ -84,8 +84,14 @@ button {
 ul{
     list-style-type: none;
 }
+
 li {
     padding: 8px 0px;
+}
+
+#loading-title{
+    margin: 5px 0;
+    color: #a8a7a7fb;
 }
 
 .adress{

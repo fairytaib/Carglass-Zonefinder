@@ -1,9 +1,9 @@
 const mobileFiliale = document.getElementById('mobile-filiale');
-const zoneNumber = document.getElementById('zone-number');
+const zoneNumber = document.getElementById('zone-number'); 
 
 let API_KEY, SHEET_ID;
 
-fetch('creds.js')
+fetch('static/javascript/creds.js')
     .then(response => response.text())
     .then(text => {
         // Parse den Inhalt von creds.js und weise die Variablen zu
@@ -65,7 +65,7 @@ searchButton.addEventListener('click', async () => {
             mobileFiliale.textContent = filial.mobile;
             zoneNumber.textContent = filial.zone;
         } else {
-            alert('Nerv nicht ein.');
+            alert('Fehler beim Laden dieser Postleitzahl.');
         }
     }
 })

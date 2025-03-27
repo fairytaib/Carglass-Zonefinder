@@ -32,7 +32,7 @@ header {
 }
 
 #language-container button {
-    max-width: 15%;
+    max-width: 9%;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
@@ -66,12 +66,12 @@ a:hover {
 header h1 {
     color: #2c3e50; /* Dunklerer Titel */
     margin-bottom: 10px;
-    font-size: 2.5em; /* Größerer Titel */
+    font-size: 2em; /* Größerer Titel */
 }
 
 header p {
     color: #555;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 main {

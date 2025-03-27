@@ -1,4 +1,5 @@
 const title = document.getElementById('title');
+const underTitle = document.getElementById('under-title');
 
 const searchInput = document.getElementById('location');
 const searchButton = document.getElementById('search-button');
@@ -273,6 +274,7 @@ function change_language_french() {
         .then(response => response.json())
         .then(data => {
             title.innerText = data.french.title
+            underTitle.innerText = data.french.subtitle
             searchInput.placeholder = data.french.location
             searchButton.innerText = data.french.search
             h3_title.innerText = data.french.h3_title
@@ -285,6 +287,7 @@ function change_language_italian() {
         .then(response => response.json())
         .then(data => {
             title.innerText = data.italia.title
+            underTitle.innerText = data.italia.subtitle
             searchInput.placeholder = data.italia.location
             searchButton.innerText = data.italia.search
             h3_title.innerText = data.italia.h3_title

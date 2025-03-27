@@ -1,6 +1,7 @@
 {
     "italia": {
         "title": "Trova filiali",
+        "subtitle": "Trova la filiale più vicina a te",
         "location": "Posizione",
         "search": "Cerca",
         "h3_title": "Filiali",
@@ -9,6 +10,7 @@
 
     "french": {
         "title": "Trouver des succursales",
+        "subtitle": "Trouvez la succursale la plus proche de chez vous",
         "location": "Emplacement",
         "search": "Chercher",
         "h3_title": "Succursales",

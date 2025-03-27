@@ -1,3 +1,0 @@
-const API_KEY = "AIzaSyClA_UounrqelAgMG6QG9SRlRKiWRSCSjo"
-
-const SHEET_ID = "1oC2Rb3VZnW2q9DTq6a3c3o-RQGa6VWzKyGYln_7A42Q"

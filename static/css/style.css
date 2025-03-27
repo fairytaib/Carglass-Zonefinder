@@ -5,103 +5,149 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif; /* Ändere die Schriftart für ein moderneres Aussehen */
-    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Moderne Schriftart */
+    margin: 0; /* Entferne Standard-Margin */
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start; /* Beginne oben */
     align-items: center;
-    background-color: #f4f4f4; /* Ein sanfter Hintergrund */
+    background: linear-gradient(135deg, #e0f2fe, #d1c4e9); /* Moderner Farbverlauf */
+    color: #333; /* Dunklerer Text für bessere Lesbarkeit */
 }
 
 header {
     text-align: center;
-    margin-bottom: 20px;
+    padding: 10px 20px; /* Mehr Platz um den Header */
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Leicht transparenter Hintergrund */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#language-container{
+#language-container {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
+    margin-top: 10px;
 }
 
-#links{
-    margin: 3px;
+#language-container button {
+    max-width: 15%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#language-container button:hover {
+    background-color: #0056b3;
+}
+
+#links {
+    margin: 10px 0;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 }
-a{
+
+a {
     text-decoration: none;
-    color: #000;
-    
+    color: #007bff; /* Blaue Links */
+    transition: color 0.3s ease;
 }
-#links a:visited{
-    color: inherit;
+
+a:hover {
+    color: #0056b3;
 }
+
 header h1 {
-    color: #333;
+    color: #2c3e50; /* Dunklerer Titel */
     margin-bottom: 10px;
+    font-size: 2.5em; /* Größerer Titel */
 }
 
 header p {
-    color: #666;
+    color: #555;
+    font-size: 1.1em;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    width: 90%; /* Breite des Hauptinhalts anpassen */
-    max-width: 600px; /* Maximale Breite für bessere Lesbarkeit */
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sanfter Schatten für Tiefe */
+    width: 90%;
+    max-width: 600px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stärkerer Schatten */
+    margin-top: 30px;
 }
 
 main > div {
-    margin-bottom: 20px; /* Abstand zwischen den Abschnitten */
+    margin-bottom: 25px;
 }
 
 input,
 button {
-    padding: 12px 15px; /* Größere Eingabefelder und Buttons */
-    margin: 5px 0;
+    padding: 14px 18px;
+    margin: 8px 0;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 16px;
-    width: 100%; /* Volle Breite für Eingabefeld und Button */
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
 }
 
 button {
-    background-color: #007bff; /* Blauer Button */
+    background-color: #007bff;
     color: white;
     cursor: pointer;
     border: none;
+    transition: background-color 0.3s ease;
 }
 
-ul{
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
     list-style-type: none;
 }
 
 li {
-    padding: 8px 0px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
 }
 
-#loading-title{
-    margin: 5px 0;
-    color: #a8a7a7fb;
+li:last-child {
+    border-bottom: none;
 }
 
-.adress{
+#loading-title {
+    margin: 8px 0;
+    color: #888;
+}
+
+.adress {
     font-style: italic;
-    color: #666;
-    margin-bottom: 10px;
+    color: #777;
+    margin-bottom: 12px;
 }
 
-footer{
-    margin-top: 10px;
+footer {
+    margin-top: 30px;
     text-align: center;
-    color: #66666677;
+    color: #888;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }

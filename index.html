@@ -22,30 +22,31 @@
     </header>
     <main>
         <div>
-            <input type="text" id="location" placeholder="Postleitzahl" maxlength="4"/>
+            <input type="text" id="location" placeholder="Postleitzahl" maxlength="4" />
             <button id="search-button">Suchen</button>
         </div>
         <div>
             <h3><span id="current-postalcode"></span></h3>
         </div>
         <div>
-            <h3 id="h3-title">Filialen</h2>
-                <ul>
-                    <li>1. <span id="closest-location"></span></li>
-                    <p id="closest-location-adress" class="adress"></p>
-
-                    <li>2. <span id="second-location"></span></li>
-                    <p id="second-location-adress" class="adress"></p>
-
-                    <li>3. <span id="third-location"></span></li>
-                    <p id="third-location-adress" class="adress"></p>
-                </ul>
-        </div>
-        <div>
-            
+            <h3 id="">Zuständige Filiale</h3>
             <ul>
+                <li>Filiale: <span id="closest-filiale"></span></li>
                 <li>Mobil: <span id="mobile-filiale"></span></li>
                 <li>Zone: <span id="zone-number"></span></li>
+            </ul>
+        </div>
+        <div>
+            <h3 id="h3-title">Weitere Filialen in der Umgebung</h3>
+            <ul>
+                <li><span id="closest-location"></span></li>
+                <p id="closest-location-adress" class="adress"></p>
+
+                <li><span id="second-location"></span></li>
+                <p id="second-location-adress" class="adress"></p>
+
+                <li><span id="third-location"></span></li>
+                <p id="third-location-adress" class="adress"></p>
             </ul>
         </div>
 

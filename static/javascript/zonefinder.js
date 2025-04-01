@@ -1,3 +1,4 @@
+const closestFiliale = document.getElementById('closest-filiale');
 const mobileFiliale = document.getElementById('mobile-filiale');
 const zoneNumber = document.getElementById('zone-number'); 
 
@@ -38,6 +39,7 @@ async function getPostalCodeData(postalCode) {
                 const mid = Math.floor((left + right) / 2);
                 if (postalCodes[mid] === postalCode) {
                     return {
+                        filiale: data.values[mid +1][1], 
                         mobile: data.values[mid + 1][2],
                         zone: data.values[mid + 1][4]
                     }; // Filiale gefunden
@@ -62,10 +64,11 @@ searchButton.addEventListener('click', async () => {
         const filial = await getPostalCodeData(postalCode);
         if (filial !== null) {
             // Zeige die Filialinformation an
+            closestFiliale.textContent = filial.filiale;
             mobileFiliale.textContent = filial.mobile;
             zoneNumber.textContent = filial.zone;
         } else {
-            alert('Fehler beim Laden dieser Postleitzahl.');
+            alert('Fehler beim Abrufen der Google Sheets-Daten.');
         }
     }
 })

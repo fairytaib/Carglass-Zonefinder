@@ -17,5 +17,15 @@
     "upper_title": "Succursale compétente",
     "lower_title": "Autres filiales à proximité",
     "footer_text": "Les codes postaux en dehors de la Suisse ne sont pas possibles"
+  },
+
+  "german": {
+    "title": "Filialfinder",
+    "subtitle": "Suche die nächsten Filialen in der Umgebung",
+    "location": "Postleitzahl",
+    "search": "Suchen",
+    "upper_title": "Zuständige Filiale",
+    "lower_title": "Weitere Filialen in der Umgebung",
+    "footer_text": "Postleitzahlen ausserhalb Schweiz sind nicht möglich"
   }
 }

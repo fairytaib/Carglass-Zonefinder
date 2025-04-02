@@ -270,6 +270,23 @@ function displayLocations(locations) {
     }
 }
 
+function changeLanguage(language){
+    fetch("./static/json/language.json")
+        .then(response => response.json())
+        .then(data => {
+            title.innerText = data[language].title
+            underTitle.innerText = data[language].subtitle
+            searchInput.placeholder = data[language].location
+            searchButton.innerText = data[language].search
+            upperTitle.innerText = data[language].upper_title
+            lowerTitle.innerText = data[language].lower_title
+            footerText.innerText = data[language].footer_text
+        })
+        .catch(error => {
+            console.error('Fehler beim Laden der Sprachdatei:', error);
+        });
+}
+
 function change_language_french() {
     fetch("./static/json/language.json")
         .then(response => response.json())
@@ -298,8 +315,9 @@ function change_language_italian() {
         })
 }
 
-french_button.addEventListener('click', change_language_french);
-italian_button.addEventListener('click', change_language_italian);
-german_button.addEventListener('click', () => {
-    location.reload();
-});
+document.addEventListener("click", function (event) {
+    if (event.target.matches(".language-button")) {
+        const selectedLanguage = event.target.getAttribute("data-language");
+        changeLanguage(selectedLanguage);
+    }
+})

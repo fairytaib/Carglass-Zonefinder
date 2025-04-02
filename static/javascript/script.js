@@ -287,33 +287,6 @@ function changeLanguage(language){
         });
 }
 
-function change_language_french() {
-    fetch("./static/json/language.json")
-        .then(response => response.json())
-        .then(data => {
-            title.innerText = data.french.title
-            underTitle.innerText = data.french.subtitle
-            searchInput.placeholder = data.french.location
-            searchButton.innerText = data.french.search
-            upperTitle.innerText = data.french.upper_title
-            lowerTitle.innerText = data.french.lower_title
-            footerText.innerText = data.french.footer_text
-        })
-}
-
-function change_language_italian() {
-    fetch("./static/json/language.json")
-        .then(response => response.json())
-        .then(data => {
-            title.innerText = data.italia.title
-            underTitle.innerText = data.italia.subtitle
-            searchInput.placeholder = data.italia.location
-            searchButton.innerText = data.italia.search
-            upperTitle.innerText = data.italia.upper_title
-            lowerTitle.innerText = data.italia.lower_title
-            footerText.innerText = data.italia.footer_text
-        })
-}
 
 document.addEventListener("click", function (event) {
     if (event.target.matches(".language-button")) {

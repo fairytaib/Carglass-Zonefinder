@@ -7,7 +7,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Moderne Schriftart */
     margin: 0; /* Entferne Standard-Margin */
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Beginne oben */
@@ -28,7 +28,6 @@ header {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 10px;
 }
 
 #language-container button {

@@ -10,7 +10,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Beginne oben */
+    justify-content: space-between; /* Beginne oben */
     align-items: center;
     background: linear-gradient(135deg, #e0f2fe, #d1c4e9); /* Moderner Farbverlauf */
     color: #333; /* Dunklerer Text für bessere Lesbarkeit */

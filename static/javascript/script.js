@@ -1,21 +1,17 @@
-const title = document.getElementById('title');
-const underTitle = document.getElementById('under-title');
-
 const searchInput = document.getElementById('location');
 const searchButton = document.getElementById('search-button');
-
-const upperTitle = document.getElementById('upper-title');
-const lowerTitle = document.getElementById('lower-title');
 
 const closestLocation = document.getElementById('closest-location');
 const secondLocation = document.getElementById('second-location');
 const thirdLocation = document.getElementById('third-location');
 
-const footerText = document.getElementById('footer-text');
 
-const french_button = document.getElementById('french-language-button');
-const italian_button = document.getElementById('italian-language-button');
-const german_button = document.getElementById('german-language-button');
+const title = document.getElementById('title');
+const underTitle = document.getElementById('under-title');
+const currentPostalCode = document.getElementById('current-postalcode');
+const upperTitle = document.getElementById('upper-title');
+const lowerTitle = document.getElementById('lower-title');
+const footerText = document.getElementById('footer-text');
 
 const fixedLocations = [{
         name: 'Aigle 35',
@@ -270,7 +266,7 @@ function displayLocations(locations) {
     }
 }
 
-function changeLanguage(language){
+function changeLanguage(language) {
     fetch("./static/json/language.json")
         .then(response => response.json())
         .then(data => {

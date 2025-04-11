@@ -93,9 +93,9 @@ const fixedLocations = [{
     },
     {
         name: 'Lyssach 39',
-        lat: 47.3868,
-        lon: 8.4839,
-        adress: "Bernstrasse 3-5, 8048 Zürich"
+        lat: 47.075138092041016,
+        lon: 7.572261333465576,
+        adress: "Bernstrasse 3-5, 3421 Lyssach"
     },
     {
         name: 'Neuenbrug/Neuchâtel 14',
